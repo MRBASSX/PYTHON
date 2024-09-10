@@ -109,21 +109,34 @@ Database = [
 #     print("No Record Found")
 
 
-def TrafficLight(color, time):
-    print("The", color, " light  is On")  # digitalWrite(color,HIGH)
-    print("delay for ", time, " ms")  # delay(10000)
-    print("The  blinking  light  is On")
-    print("delay for ", 100, " ms")  # delay(100)
-    print("The  blinking  light  is On")
-    print("delay for ", 100, " ms")  # delay(100)
-    print("The  blinking  light  is On")
-    print("delay for ", 100, " ms")  # delay(100)
-    print("The", color, " light  is Off")  # digitalWrite(color,LOW)
-    print("delay for ", "10000", " ms")  # delay(1000)
+# def TrafficLight(color, time):
+#     print("The", color, " light  is On")  # digitalWrite(color,HIGH)
+#     print("delay for ", time, " ms")  # delay(10000)
+#     print("The  blinking  light  is On")
+#     print("delay for ", 100, " ms")  # delay(100)
+#     print("The  blinking  light  is On")
+#     print("delay for ", 100, " ms")  # delay(100)
+#     print("The  blinking  light  is On")
+#     print("delay for ", 100, " ms")  # delay(100)
+#     print("The", color, " light  is Off")  # digitalWrite(color,LOW)
+#     print("delay for ", "10000", " ms")  # delay(1000)
+#
+#
+# TrafficLight("Red", 10000)
+#
+# TrafficLight("Yellow", 5000)
+#
+# TrafficLight("Green", 15000)
 
 
-TrafficLight("Red", 10000)
 
-TrafficLight("Yellow", 5000)
 
-TrafficLight("Green", 15000)
+import  math
+
+Object = math
+Object.sin()
+Object.cos()
+
+
+
+
