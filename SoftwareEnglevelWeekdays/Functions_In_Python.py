@@ -131,11 +131,11 @@ Database = [
 
 
 
-import  math
-
-Object = math
-Object.sin()
-Object.cos()
+# import  math
+#
+# Object = math
+# Object.sin()
+# Object.cos()
 
 
 
