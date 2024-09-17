@@ -37,33 +37,84 @@
 #     print("You canT Vote")
 #
 # print(object.Square(20))
+Database = [
+    {
+        "id": "UPI0001",
+        "name": "Giscard",
+        "course": "Software Engineering",
+        "level": 2,
+        "password": "123456789",
+        "email": "Giscard@gmail.com"
+    },
+    {
+        "id": "UPI0002",
+        "name": "Atta",
+        "course": "Software Engineering",
+        "level": 2,
+        "password": "1234567811",
+        "email": "Atta@gmail.com"
+    },
+    {
+        "id": "UPI0003",
+        "name": "Jones",
+        "course": "Software Engineering",
+        "level": 2,
+        "password": "1234567812",
+        "email": "Jones@gmail.com"
+    },
+    {
+        "id": "UPI0004",
+        "name": "Boakye",
+        "course": "Software Engineering",
+        "level": 2,
+        "password": "1234567813",
+        "email": "Boakye@gmail.com"
+    }
+]
+
 
 class SoftwareEngineers:
     # Properties
-    first_name = None
-    surname = None
-    other = None
-    height = None
-    age = None
+    __id = None
+    __name = None
+    __course = None
+    __level = None
+    __password = None
+    __email = None
 
     # Constructor or Initializer
-    def __init__(self, First_Name, Surname, Other, Height, Age):
-        self.first_name = First_Name
-        self.surname = Surname
-        self.other = Other
-        self.height = Height
-        self.age = Age
+    def __init__(self, Id, Name, Course, Level, Pasword, Email):
+        self.__id = Id
+        self.__name = Name
+        self.__course = Course
+        self.__Level = Level
+        self.__pasword = Pasword
+        self.__email = Email
 
     # Setters and getters
-    def setFirstName(self, First_Name):
-        self.first_name = First_Name
+    def setId(self, Id):
+        self.__id = Id
 
-    def getFirstName(self):
-        return self.first_name
+    def getId(self):
+        return self.__id
+
+    def setName(self, Name):
+        self.__name = Name
+
+    def getName(self):
+        return self.__name
 
 
-object = SoftwareEngineers("A", "B", "C", "D", "E")
+userinput = input("User ID:")
+for data in Database:
+    if data.__getitem__('id') == userinput:
+        object = SoftwareEngineers(data.__getitem__('id'), data.__getitem__('name'), data.__getitem__('course'),
+                                   data.__getitem__('level'), data.__getitem__('password'), data.__getitem__('email'))
+        print(object.getId())
+        print(object.getName())
+        break
 
-object.setFirstName("Mr Abass")
-
-print(object.getFirstName())
+# print(object.getFirstName())
+object = SoftwareEngineers(1, 2, 3, 4, 5, 6)
+object.setId(45)
+print(object.getId())

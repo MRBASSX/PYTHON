@@ -14,6 +14,42 @@
 #
 # ]
 
+
+Database = [
+    {
+        "id": "UPI0001",
+        "name": "Giscard",
+        "course": "Software Engineering",
+        "level": 2,
+        "password": "123456789",
+        "email": "Giscard@gmail.com"
+    },
+    {
+        "id": "UPI0002",
+        "name": "Atta",
+        "course": "Software Engineering",
+        "level": 2,
+        "password": "1234567811",
+        "email": "Atta@gmail.com"
+    },
+    {
+        "id": "UPI0003",
+        "name": "Jones",
+        "course": "Software Engineering",
+        "level": 2,
+        "password": "1234567812",
+        "email": "Jones@gmail.com"
+    },
+    {
+        "id": "UPI0004",
+        "name": "Boakye",
+        "course": "Software Engineering",
+        "level": 2,
+        "password": "1234567813",
+        "email": "Boakye@gmail.com"
+    }
+]
+
 # Set = {"Giscard", 'Jones', 'Atta', 122}
 #
 # for i in Set:
