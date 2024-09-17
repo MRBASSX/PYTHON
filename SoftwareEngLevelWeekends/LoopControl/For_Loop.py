@@ -54,14 +54,15 @@ Database = [
     }
 ]
 
+IndexNumber = input("Enter Student ID")
 for Base in Database:
-    if Base.__getitem__('indexNo') == "UY50001":
+    if Base.__getitem__('indexNo') == IndexNumber:
         print("Name : ", Base.__getitem__('name'))
-    print("IndexNo : ", Base.__getitem__('indexNo'))
-    print("Level : ", Base.__getitem__('level'))
-    print("Course : ", Base.__getitem__('course'))
-    print("Password : ", Base.__getitem__('password'))
-    print("Email : ", Base.__getitem__('Email'.lower()))
-    print(" ")
-    break
+        print("IndexNo : ", Base.__getitem__('indexNo'))
+        print("Level : ", Base.__getitem__('level'))
+        print("Course : ", Base.__getitem__('course'))
+        print("Password : ", Base.__getitem__('password'))
+        print("Email : ", Base.__getitem__('Email'.lower()))
+        print(" ")
+        break
 
