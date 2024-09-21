@@ -105,16 +105,24 @@ class SoftwareEngineers:
         return self.__name
 
 
-userinput = input("User ID:")
+
+
+# object = SoftwareEngineers(1,1,2,2,2,3)
+#
+# object.Looper(Database)
+
+
+# userinput = input("User ID:")
 for data in Database:
-    if data.__getitem__('id') == userinput:
+    # if data.__getitem__('id') == userinput:
         object = SoftwareEngineers(data.__getitem__('id'), data.__getitem__('name'), data.__getitem__('course'),
                                    data.__getitem__('level'), data.__getitem__('password'), data.__getitem__('email'))
+        # print(object.getId())
+        # print(object.getName())
         print(object.getId())
-        print(object.getName())
-        break
+        # break
 
-# print(object.getFirstName())
-object = SoftwareEngineers(1, 2, 3, 4, 5, 6)
-object.setId(45)
-print(object.getId())
+# # print(object.getFirstName())
+# object = SoftwareEngineers(1, 2, 3, 4, 5, 6)
+# object.setId(45)
+# print(object.getId())
