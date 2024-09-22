@@ -26,7 +26,32 @@ listname = []
 #     listname.append(Dic.__getitem__(Data))
 #
 # print(listname)
-
+Database = [
+    {
+        'indexNo': 'UY50001',
+        'name': 'Shadrack',
+        'level': 'Two',
+        'course': "Software Engineering",
+        'password': 'qwerty360',
+        'email': 'Shadrack@gmail.com'
+    },
+    {
+        'indexNo': 'UY50002',
+        'name': 'Jonathan',
+        'level': 'Two',
+        'course': "Software Engineering",
+        'password': 'qwerty361',
+        'email': 'Jonathan@gmail.com'
+    },
+    {
+        'indexNo': 'UY50003',
+        'name': 'Joseph',
+        'level': 'Two',
+        'course': "Software Engineering",
+        'password': 'qwerty362',
+        'email': 'Joseph@gmail.com'
+    }
+]
 
 
 IndexNumber = input("Enter Student ID")
