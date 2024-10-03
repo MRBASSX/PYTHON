@@ -1,6 +1,7 @@
 from ClassOfDogs import Dogs
 
 
-class Cats(Dogs):
-    def Sound(self):
-        print("Cat Meow......")
+class Cat(Dogs):
+    pass
+    # def Sound(self):
+    #     print("Cat Meow......")

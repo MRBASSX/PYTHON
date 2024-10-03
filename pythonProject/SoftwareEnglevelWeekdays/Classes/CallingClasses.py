@@ -1,14 +1,15 @@
 from ClassOfAnimal import Animal
-from ClassOfSheeps import Sheeps
-from ClassOfCats import Cats
+from ClassOfSheeps import Sheep
+from ClassOfCats import Cat
 from ClassOfDogs import Dogs
 
-CatsObject = Cats()
+CatsObject = Cat()
 DogsObject = Dogs()
-SheepsObject = Sheeps()
+SheepsObject = Sheep()
 AnimalObject = Animal()
 
+AnimalObject
 SheepsObject.Sound()
 DogsObject.Sound()
-CatsObject.Sound()
+CatsObject.Done()
 

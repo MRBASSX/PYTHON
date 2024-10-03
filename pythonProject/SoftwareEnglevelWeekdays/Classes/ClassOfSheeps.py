@@ -1,6 +1,7 @@
-from ClassOfCats import Cats
+from ClassOfAnimal import Animal
 
 
-class Sheeps(Cats):
+class Sheep(Animal):
+
     def Sound(self):
         print("Sheep Bleeeee......")
