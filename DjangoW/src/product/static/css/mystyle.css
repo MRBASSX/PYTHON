@@ -1,0 +1,9 @@
+body{
+color:red;
+background-color:blue;
+}
+
+.box{
+box-shadow:0px 0px 12px green;
+
+}

@@ -1,3 +1,5 @@
+ # import mysql.connector
+
 # class Personal_Information:
 #     first_name = None
 #     surname = None
@@ -126,3 +128,21 @@ for data in Database:
 # object = SoftwareEngineers(1, 2, 3, 4, 5, 6)
 # object.setId(45)
 # print(object.getId())
+
+def QueryIsGood(query):
+
+    mydb = mysql.connector.connect(
+        host="127.0.0.1",
+        user="root",
+        password="",
+        database="django"
+    )
+    mycursor = mydb.cursor()
+
+    mycursor.execute(query)
+
+    myresult = mycursor.fetchall()
+    return myresult
+print(QueryIsGood("select * from tabalename"))
+for data in QueryIsGood("select * from tabalename"):
+    print(data)

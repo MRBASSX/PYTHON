@@ -9,11 +9,14 @@
 <body>
 
 <div>
-    Welcome Home {{key}}
-    <br>
-     Welcome Home {{key}}
-    <br>
-     Welcome Home {{key}}
+    {% for MY in key %}
+    <div style="background:teal; color:white;  margin:12px; padding:40px">
+       {{MY.name}}
+         {{MY.price}}
+         {{MY.description}}
+    </div>
+    {% endfor %}
+
 </div>
 
 </body>
